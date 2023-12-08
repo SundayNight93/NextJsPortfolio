@@ -8,7 +8,7 @@ const TAB_DATA = [{
     title: "Skills",
     id: "skills",
     content: (
-        <ul>
+        <ul className="list-disc pl-2">
             <li>Node.js</li>
             <li>Express</li>
             <li>PostgreSQL</li>
@@ -22,7 +22,7 @@ const TAB_DATA = [{
     title: "Education",
     id: "education",
     content: (
-        <ul>
+        <ul className="list-disc pl-2">
             <li>Fullstack Academy of Code</li>
             <li>University of California, Santa Cruz</li>
         </ul>
@@ -32,7 +32,7 @@ const TAB_DATA = [{
     title: "Certifications",
     id: "certifications",
     content: (
-        <ul>
+        <ul className="list-disc pl-2">
             <li>AWS Cloud Practitioner</li>
             <li>Google Professional Cloud Developer</li>
         </ul>
@@ -69,7 +69,7 @@ const AboutSection = () => {
             looking to expand my knowledge and skill set. I am a team player and
             I am excited to work with others to create amazing applications.
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="flex flex-col sm:flex-row  justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
